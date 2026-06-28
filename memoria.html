@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciarMemoria()">
+  <main class="tela">
+    <h1>Jogo da Memória</h1>
+    <p class="subtitulo">Encontre os pares iguais</p>
+    <div class="barra-info">
+      <span>Pares encontrados: <strong id="paresEncontrados">0</strong>/6</span>
+    </div>
+    <div id="tabuleiro" class="tabuleiro" aria-label="Tabuleiro do jogo da memória"></div>
+    <button id="proximoMemoria" class="botao verde escondido" onclick="irPara('sons.html')">PRÓXIMA ATIVIDADE</button>
+    <button class="botao cinza" onclick="repetirInstrucaoMemoria()">🔊 OUVIR INSTRUÇÃO</button>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
