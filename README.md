@@ -38,4 +38,5 @@ simples, utilizando imagens, sons e instruções por áudio.
 ## Autor
 
 Leandro Correa da Maia
+
 Catia Maine Ribeiro Campos
