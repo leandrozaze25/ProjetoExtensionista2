@@ -1,0 +1,365 @@
+/* ---------- Base ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef4fb;
+  color: #1f2937;
+}
+
+/* ---------- Layout Geral ---------- */
+
+.tela {
+  min-height: 100vh;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-principal {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 52px;
+  margin: 8px 0 12px;
+}
+
+.subtitulo {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 18px;
+}
+
+.descricao {
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+/* ---------- Botões ---------- */
+
+.botao {
+  width: 92%;
+  max-width: 560px;
+  min-height: 96px;
+  margin: 14px auto;
+  padding: 16px;
+  font-size: 32px;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.verde {
+  background: #18883b;
+  color: white;
+}
+
+.azul {
+  background: #1769c2;
+  color: white;
+}
+
+.cinza {
+  background: #4b5563;
+  color: white;
+}
+
+.escondido {
+  display: none;
+}
+
+/* ---------- Informações ---------- */
+
+.barra-info {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 18px;
+  margin: 10px auto 18px;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.pergunta {
+  width: 100%;
+  max-width: 900px;
+  font-size: 38px;
+  line-height: 1.35;
+  font-weight: bold;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 20px auto;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Jogo da Memória ---------- */
+
+.tabuleiro {
+  width: 100%;
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 18px auto 24px;
+}
+
+.carta {
+  min-height: 130px;
+  border: none;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.carta.encontrada {
+  background: #d8f5df;
+  border: 4px solid #18883b;
+}
+
+.conteudo-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-carta,
+.logo-carta {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+
+.nome-carta {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+/* ---------- Opções dos Jogos ---------- */
+
+.opcoes {
+  width: 100%;
+  max-width: 860px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.opcao {
+  min-height: 130px;
+  padding: 18px;
+  font-size: 34px;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.opcao:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.opcao.correta {
+  background: #d8f5df;
+  border: 4px solid #18883b;
+}
+
+.opcao.errada {
+  background: #ffd9d9;
+  border: 4px solid #c62828;
+}
+
+/* ---------- Jogo dos Sons ---------- */
+
+.opcao-imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-opcao {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.nome-opcao {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ---------- Jogo do Troco ---------- */
+
+.area-troco {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 20px auto;
+}
+
+.bloco-troco {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 20px;
+  min-height: 250px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloco-troco h2 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+.imagem-troco {
+  width: 160px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.nota-troco {
+  width: 190px;
+  height: 120px;
+}
+
+.texto-troco {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 6px 0 0;
+}
+
+.preco-troco {
+  font-size: 48px;
+  font-weight: bold;
+  color: #18883b;
+}
+
+/* ---------- Resultado ---------- */
+
+.resultado {
+  background: #f9fafb;
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 620px;
+  margin: 20px auto;
+  box-shadow: inset 0 0 0 2px #e5e7eb;
+}
+
+.resultado p {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 16px;
+}
+
+/* ---------- Responsividade ---------- */
+
+@media (max-width: 760px) {
+  .tela {
+    padding: 14px;
+  }
+
+  .card-principal {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .subtitulo {
+    font-size: 24px;
+  }
+
+  .descricao {
+    font-size: 22px;
+  }
+
+  .botao {
+    font-size: 26px;
+    min-height: 84px;
+  }
+
+  .barra-info {
+    font-size: 24px;
+  }
+
+  .pergunta {
+    font-size: 28px;
+  }
+
+  .tabuleiro {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 480px;
+  }
+
+  .carta {
+    min-height: 110px;
+  }
+
+  .opcoes {
+    grid-template-columns: 1fr;
+  }
+
+  .opcao {
+    font-size: 28px;
+    min-height: 100px;
+  }
+
+  .area-troco {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  .bloco-troco {
+    min-height: 180px;
+  }
+
+  .imagem-troco {
+    width: 130px;
+    height: 110px;
+  }
+
+  .nota-troco {
+    width: 170px;
+    height: 100px;
+  }
+
+  .preco-troco {
+    font-size: 38px;
+  }
+
+  .resultado p {
+    font-size: 30px;
+  }
+}

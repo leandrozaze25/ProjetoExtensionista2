@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado Final</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="mostrarResultado()">
+  <main class="tela">
+    <section class="card-principal">
+      <h1> Resultado Final</h1>
+      <div class="resultado">
+        <p>Acertos: <span id="totalAcertos">0</span></p>
+        <p>Erros: <span id="totalErros">0</span></p>
+        <p>Pontuação: <span id="pontuacao">0%</span></p>
+      </div>
+      <p id="mensagemFinal" class="descricao"></p>
+      <button class="botao verde" onclick="reiniciarCircuito()">JOGAR NOVAMENTE</button>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

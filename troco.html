@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Troco</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="iniciarTroco()">
+  <main class="tela">
+
+    <h1>Jogo do Troco</h1>
+
+    <div class="barra-info">
+      <span id="numeroTroco">Rodada 1 de 5</span>
+    </div>
+
+    <section class="area-troco">
+
+      <div class="bloco-troco">
+        <h2>Produto</h2>
+        <img id="imagemProdutoTroco" class="imagem-troco" src="" alt="Produto">
+        <p id="nomeProdutoTroco" class="texto-troco">Produto</p>
+      </div>
+
+      <div class="bloco-troco">
+        <h2>Preço</h2>
+        <div id="precoProdutoTroco" class="preco-troco">R$ 0,00</div>
+      </div>
+
+      <div class="bloco-troco">
+        <h2>Você pagou</h2>
+        <img id="imagemNotaTroco" class="imagem-troco nota-troco" src="" alt="Nota">
+        <p id="valorPagoTroco" class="texto-troco">R$ 0,00</p>
+      </div>
+
+    </section>
+
+    <p id="perguntaTroco" class="pergunta">
+      Quanto você deve receber de troco?
+    </p>
+
+    <div id="opcoesTroco" class="opcoes"></div>
+
+    <button class="botao cinza" onclick="repetirPerguntaTroco()">
+      🔊 OUVIR NOVAMENTE
+    </button>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

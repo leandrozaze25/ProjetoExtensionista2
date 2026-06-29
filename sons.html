@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sons e Recordações</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciarSons()">
+  <main class="tela">
+    <h1>Sons e Recordações</h1>
+
+    <div class="barra-info">
+      <span id="numeroSons">Rodada 1 de 5</span>
+    </div>
+
+    <p id="perguntaSons" class="pergunta">
+      Qual objeto produziu este som?
+    </p>
+
+    <div id="opcoesSons" class="opcoes"></div>
+
+    <button class="botao cinza" onclick="repetirPerguntaSons()">
+      🔊 OUVIR NOVAMENTE
+    </button>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
